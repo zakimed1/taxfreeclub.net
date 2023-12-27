@@ -27,6 +27,7 @@
 
 .arabic-text {
     font-family: 'Simplified Arabic', sans-serif;
+   direction: rtl;
   }
 *{
   margin :0;
