@@ -13,7 +13,7 @@ function openPage(url) {
 // }, 2250); // 3000 milliseconds (adjust as needed)
 
 function openDiscordInvite(){
-window.open("https://discord.gg/daDJU2CWU6");
+window.open("https://discord.gg/yuYsMAAsBx");
 }window
 
 var d = new Date();
