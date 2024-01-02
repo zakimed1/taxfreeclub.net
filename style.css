@@ -148,7 +148,6 @@ div ol li span{
   transition:  0.3s;
   position: relative;
   right: 0;
-  display: none;
 }
 
 #dropdownContent {
@@ -158,3 +157,4 @@ div ol li span{
   color: #fff;
   font-size: 20PX;
 }
+
