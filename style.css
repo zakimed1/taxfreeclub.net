@@ -148,6 +148,7 @@ div ol li span{
   transition:  0.3s;
   position: relative;
   right: 0;
+  display: 0;
 }
 
 #dropdownContent {
