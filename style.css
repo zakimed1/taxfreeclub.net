@@ -135,4 +135,25 @@ div ol li span{
     font-size: 1.2em;
   }
 }
+#dropdownButton {
+  background-color:rgb(8, 8, 8);
+  color: white;
+  padding: 20px 10px 10px 10px;
+  border: none;
+  cursor: pointer;
+  border: 2px #2a2f3b solid;
+  border-radius: 0.5em;
+  padding: 1em;
+  cursor: pointer;
+  transition:  0.3s;
+  position: relative;
+  right: 0;
+}
 
+#dropdownContent {
+  display: none;
+  padding: 20px;
+  background-color: black;
+  color: #fff;
+  font-size: 20PX;
+}
