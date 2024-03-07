@@ -1,13 +1,13 @@
 {
    "name": "my-app",
    "version": "0.1.0",
-   "homepage": "https://github.com/zakimed1/taxfreeclub.net.git",
+   "homepage": "https://taxfreeclub.net/",
    "scripts": {
       "start": "vite",
       "build": "vite build",
       "serve": "vite preview",
       "predeploy": "npm run build",
-      "deploy": "gh-pages -d dist"
+      "deploy": "gh-pages -d build"
    },
    "dependencies": {
       "@material-tailwind/react": "^2.1.9",
