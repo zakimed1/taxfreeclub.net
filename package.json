@@ -1,38 +1,39 @@
 {
-  "name": "project",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@material-tailwind/react": "^2.1.9",
-    "react": "^18.2.0",
-    "react-countdown": "^2.3.5",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.22.2",
-    "react-slick": "^0.30.2",
-    "react-spring": "^9.7.3",
-    "react-spring-3d-carousel": "^1.3.4",
-    "slick-carousel": "^1.8.1",
-    "uuid": "^9.0.1",
-    "uuidv4": "^6.2.13"
-  },
-  "devDependencies": {
-    "@types/react": "^18.2.56",
-    "@types/react-dom": "^18.2.19",
-    "@vitejs/plugin-react": "^4.2.1",
-    "autoprefixer": "^10.4.18",
-    "eslint": "^8.56.0",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.5",
-    "postcss": "^8.4.35",
-    "tailwindcss": "^3.4.1",
-    "vite": "^5.1.5"
-  }
+   "name": "my-app",
+   "version": "0.1.0",
+   "homepage": "https://github.com/zakimed1/taxfreeclub.net.git",
+   "scripts": {
+      "start": "vite",
+      "build": "vite build",
+      "serve": "vite preview",
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d dist"
+   },
+   "dependencies": {
+      "@material-tailwind/react": "^2.1.9",
+      "react": "^18.2.0",
+      "react-countdown": "^2.3.5",
+      "react-dom": "^18.2.0",
+      "react-router-dom": "^6.22.3",
+      "react-slick": "^0.30.2",
+      "react-spring": "^9.7.3",
+      "react-spring-3d-carousel": "^1.3.4",
+      "slick-carousel": "^1.8.1",
+      "uuid": "^9.0.1",
+      "uuidv4": "^6.2.13"
+   },
+   "devDependencies": {
+      "@types/react": "^18.2.56",
+      "@types/react-dom": "^18.2.19",
+      "@vitejs/plugin-react": "^4.2.1",
+      "autoprefixer": "^10.4.18",
+      "eslint": "^8.56.0",
+      "eslint-plugin-react": "^7.33.2",
+      "eslint-plugin-react-hooks": "^4.6.0",
+      "eslint-plugin-react-refresh": "^0.4.5",
+      "gh-pages": "^6.1.1",
+      "postcss": "^8.4.35",
+      "tailwindcss": "^3.4.1",
+      "vite": "^5.1.5"
+   }
 }
