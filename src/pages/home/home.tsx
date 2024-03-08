@@ -25,9 +25,6 @@ export default function Home() {
       <div className="max-w-full w-full px-15">
         <section className="my-10">
           <div className="relative">
-            <h5 className="absolute top-0 left-0.5 font-[Abel] font-normal text-sm">
-              Welcome To TFC
-            </h5>
             <h1 className="font-[Roboto] text-8xl font-bold mx-auto max-sm:text-xl">
               Make Yourself Great Again
             </h1>
@@ -38,7 +35,7 @@ export default function Home() {
           </h2>
           <div className="flex items-center justify-center max-sm:flex-col">
             <div>
-              <p className="text-right font-[Rubik] font-normal leading-10  max-sm:text-xs max-sm:text-center ">
+              <p className="text-right font-[Rubik] font-normal leading-10  max-sm:text-xs max-sm:text-center  ">
                 رد بالك !! مواقع تواصل قنعوك بلي تقدر ولازم تعيش وحدك. وين فالصح
                 العزلة خطيرة علينا
                 <br />

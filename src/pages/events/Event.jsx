@@ -12,10 +12,11 @@ import {
 import Lamin from "../events/lamin.jpg";
 import Mouhamed from "../events/mohamed.jpg";
 import Walid from "../events/walid.jpg";
-
+localStorage.clear();
 const EventContdown = () => {
   const [remainingTime, setRemainingTime] = useState(
-    parseInt(localStorage.getItem("countdownTimestamp")) || Date.now() + 79205000
+    parseInt(localStorage.getItem("countdownTimestamp")) ||
+      Date.now() + 79205000
   );
   useEffect(() => {
     localStorage.setItem("countdownTimestamp", remainingTime.toString());
@@ -24,9 +25,9 @@ const EventContdown = () => {
     <>
       <Countdown
         date={remainingTime}
-        className="h-36 w-auto font-mono text-center  m-7 sm:text-5xl md:text-7xl lg:text-9xl sm:m-0 md:m-3 lg:m-5"
+        className="h-36 w-auto font-mono text-center  m-7 max-sm:text-5xl md:text-7xl lg:text-9xl sm:m-0 md:m-3 lg:m-5b max-sm:h-16"
       />
-      <h2 className="h-32 w-auto font-mono text-center  m-6 sm:text-xl,m-0 md:text-1xl lg:text-4xl">
+      <h2 className="h-32 w-auto font-mono text-center  m-6 max-sm:text-xl,m-0 md:text-1xl lg:text-4xl max-sm:h-16">
         متضيعش هذي الفرصة
       </h2>
     </>
