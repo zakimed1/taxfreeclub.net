@@ -15,8 +15,7 @@ import Walid from "../events/walid.jpg";
 
 const EventContdown = () => {
   const [remainingTime, setRemainingTime] = useState(
-    parseInt(localStorage.getItem("countdownTimestamp")) ||
-      Date.now() + 216435000
+    parseInt(localStorage.getItem("countdownTimestamp")) || Date.now() + 79205000
   );
   useEffect(() => {
     localStorage.setItem("countdownTimestamp", remainingTime.toString());
@@ -38,7 +37,7 @@ const EventMain = () => {
   return (
     <>
       <div className="flex justify-center items-center flex-col   h-auto ">
-        <h1 className="text-8xl h-60 sm:text-3xl md:text-5xl lg:text-8xl  sm:h-20 md:h-36">
+        <h1 className="text-8xl h-60 max-sm:text-3xl md:text-5xl lg:text-8xl  max-sm:h-20 md:h-36">
           <span className="text-red-700">المشكل </span>
           يرجع
           <span className="text-green-700"> فرصة</span>
@@ -132,7 +131,11 @@ const EventMain = () => {
               />
             </CardHeader>
             <CardBody className="text-center">
-              <Typography variant="h6" color="white" className="mb-2 capitalize">
+              <Typography
+                variant="h6"
+                color="white"
+                className="mb-2 capitalize"
+              >
                 walid ezra
               </Typography>
               <Typography

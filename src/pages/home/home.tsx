@@ -28,7 +28,7 @@ export default function Home() {
             <h5 className="absolute top-0 left-0.5 font-[Abel] font-normal text-sm">
               Welcome To TFC
             </h5>
-            <h1 className="font-[Roboto] text-8xl font-bold mx-auto">
+            <h1 className="font-[Roboto] text-8xl font-bold mx-auto max-sm:text-xl">
               Make Yourself Great Again
             </h1>
           </div>
@@ -36,9 +36,9 @@ export default function Home() {
             Developemnt,Design Marketing-Despline <br />
             Skillful Work.
           </h2>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center max-sm:flex-col">
             <div>
-              <p className="text-right font-[Rubik] font-normal leading-10 text-base">
+              <p className="text-right font-[Rubik] font-normal leading-10  max-sm:text-xs max-sm:text-center ">
                 رد بالك !! مواقع تواصل قنعوك بلي تقدر ولازم تعيش وحدك. وين فالصح
                 العزلة خطيرة علينا
                 <br />
