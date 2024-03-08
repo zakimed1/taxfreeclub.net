@@ -14,13 +14,26 @@ import Mouhamed from "../events/mohamed.jpg";
 import Walid from "../events/walid.jpg";
 localStorage.clear();
 const EventContdown = () => {
+  const endDate = new Date('March 09, 2024 09:00:00').getTime();
+ 
   const [remainingTime, setRemainingTime] = useState(
-    parseInt(localStorage.getItem("countdownTimestamp")) ||
-      Date.now() + 79205000
+    parseInt(localStorage.getItem("countdownTimestamp")) || endDate
+      //Date.now() + 79205000
   );
+
   useEffect(() => {
-    localStorage.setItem("countdownTimestamp", remainingTime.toString());
+    localStorage.setItem('countdownTimestamp', remainingTime.toString());
   }, [remainingTime]);
+  useEffect(() => {
+    const now = Date.now();
+    if (endDate < now) {
+      setRemainingTime(endDate); // Ensure countdown ends at the endDate
+    } else if (remainingTime > endDate) {
+      setRemainingTime(endDate);
+    }
+  }, [endDate, remainingTime]);
+
+
   return (
     <>
       <Countdown
