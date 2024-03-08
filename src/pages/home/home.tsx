@@ -22,6 +22,7 @@ export default function Home() {
   };
   return (
     <>
+      <Event />
       <div className=" w-full px-15">
         <section className="my-10">
           <div className="relative">
@@ -33,7 +34,7 @@ export default function Home() {
             Developemnt,Design Marketing-Despline <br />
             Skillful Work.
           </h2>
-          <div className="flex items-center justify-center max-sm:flex-col">
+          <div className="flex items-center justify-center max-sm:flex-col ">
             <div className="max-sm:w-full max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center">
               <p className="w-5/6 text-right font-[Rubik] font-normal leading-10  max-sm:text-xs max-sm:text-center  ">
                 رد بالك !! مواقع تواصل قنعوك بلي تقدر ولازم تعيش وحدك. وين فالصح
@@ -43,22 +44,22 @@ export default function Home() {
                 الخدمة وديما يعاونك <br />
                 بش متقعدش فنفس البلاصة... وعلابيها راكم هنا اليوم.
               </p>
-              <div className="flex gap-3.75 mt-20 mx-40">
+              <div className="flex gap-8 mt-20 mx-40">
                 <Link
-                  className="bg-white text-black px-5 py-2.5 rounded-full shadow-none transition-all duration-300"
+                  className="bg-white text-black px-5 py-2.5 rounded-full shadow-none transition-all duration-300 flex justify-center items-center"
                   to={"/challenge"}
                 >
                   Join Challenge Now
                 </Link>
                 <Link
-                  className="bg-white text-black px-5 py-2.5 rounded-full shadow-none transition-all duration-300"
+                  className="bg-white text-black px-5 py-2.5 rounded-full shadow-none transition-all duration-300 flex justify-center items-center"
                   to={"/about"}
                 >
                   Discover TFC
                 </Link>
               </div>
             </div>
-            <div className="mt-[-25px]">
+            <div className="flex justify-center items-center align-middle">
               <Logo size={280} />
             </div>
           </div>
@@ -66,10 +67,10 @@ export default function Home() {
         <section>
           <div className="flex w-full items-center justify-between">
             <div className="flex flex-col justify-between text-left">
-              <h1 className="font-[Roboto] text-4xl font-normal">
+              <h1 className="font-[Roboto] text-4xl font-normal ml-10">
                 Our Members Opinions
               </h1>
-              <h2 className="font-[Roboto] text-2.5xl font-normal">
+              <h2 className="font-[Roboto] text-2.5xl font-normal ml-10">
                 Don’t take our word for it. Trust our customers
               </h2>
             </div>
@@ -128,37 +129,47 @@ export default function Home() {
               {/* <div className={Style.slideone}> */}
               <RateCard
                 rate="5"
-                message={"SUCH A GREAT COMMUNITY "}
-                name={"mounir hamed"}
+                message={
+                  "طورت نفسي فالمجال grh خاصة مع تكوين لي وفراتوا tfc بديت نخطط لمشروعي"
+                }
+                name={"شفاء"}
               ></RateCard>
               <RateCard
-                rate="4.5"
-                message={"tfc afdal haja sratli f had l3am"}
-                name={"hasan adbalh"}
+                rate="5 "
+                message={
+                  "حققت اللي ماحققتوش في عام وحدي خاصة من ناحية البرمجة قبل ما ندخل ظليت شهرين مع html css كي دخلت كملتهم في سيمانة برك"
+                }
+                name={"حسان"}
               ></RateCard>
               <RateCard
                 rate="5"
                 message={
-                  "tfc is the palce that made me better and displine i meet a great people there ,proud of being a member"
+                  "بديت البونس و تعلمت الكوميني مانجمنت- هدرت مع شحال من اجونس دو فواياج دوك راني خدامة مع زوج و بلاك رح تكون كاينة ثالثة"
                 }
-                name={"lina  elgoubary"}
+                name={"مروى"}
               ></RateCard>
               {/* </div> */}
               {/* <div className={Style.slidetwo}> */}
               <RateCard
                 rate="5"
-                message={"who didnt jion tfc yet rahou irati "}
-                name={"mohamed"}
+                message={
+                  "I improved my skill in editing i did huge progress. I become consistent on my daily activities during the day reading, working, sports "
+                }
+                name={"Farida"}
               ></RateCard>
               <RateCard
                 rate="5"
-                message={"jioning tfc is worthed"}
-                name={"afaf"}
+                message={
+                  "الاجتماع مع اناس مروا بتجارب مختلفة ووصل كل منهم الا نتائج بمواجهة المشاكل و إيجاد حلول، يعطيك فكرة عن الإنسان لم يخلق لينجح  وحيدا رغم الجميع و لكن ان ينجح في وسط مجتمع ناجح مع الجميع"
+                }
+                name={"صديق"}
               ></RateCard>
               <RateCard
                 rate="5"
-                message={"just amazing"}
-                name={"zakaria hamed"}
+                message={
+                  "تغيير في روتيني اليومي. الأفضل إعادة انعاش الدماغ بعد 3 سنوات في المنزل"
+                }
+                name={"مرورة"}
               ></RateCard>
               {/* </div> */}
             </div>
@@ -183,7 +194,7 @@ export default function Home() {
         </section>
 
         <AboutUsSection />
-        <Event />
+
         <FooterSection />
       </div>
     </>
