@@ -22,7 +22,7 @@ export default function Home() {
   };
   return (
     <>
-      <div className="max-w-full w-full px-15">
+      <div className=" w-full px-15">
         <section className="my-10">
           <div className="relative">
             <h1 className="font-[Roboto] text-8xl font-bold mx-auto max-sm:text-xl">
@@ -34,8 +34,8 @@ export default function Home() {
             Skillful Work.
           </h2>
           <div className="flex items-center justify-center max-sm:flex-col">
-            <div>
-              <p className="text-right font-[Rubik] font-normal leading-10  max-sm:text-xs max-sm:text-center  ">
+            <div className="max-sm:w-full max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center">
+              <p className="w-5/6 text-right font-[Rubik] font-normal leading-10  max-sm:text-xs max-sm:text-center  ">
                 رد بالك !! مواقع تواصل قنعوك بلي تقدر ولازم تعيش وحدك. وين فالصح
                 العزلة خطيرة علينا
                 <br />
