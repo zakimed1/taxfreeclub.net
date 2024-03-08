@@ -14,7 +14,7 @@ import Mouhamed from "../events/mohamed.jpg";
 import Walid from "../events/walid.jpg";
 localStorage.clear();
 const EventContdown = () => {
-  const endDate = new Date('March 09, 2024 09:00:00').getTime();
+  const endDate = new Date('March 09, 2024 10:00:00').getTime();
  
   const [remainingTime, setRemainingTime] = useState(
     parseInt(localStorage.getItem("countdownTimestamp")) || endDate
