@@ -22,7 +22,7 @@ export default function Home() {
   };
   return (
     <>
-      <Event />
+      {/* <Event /> */}
       <div className=" w-full px-15">
         <section className="my-10">
           <div className="relative">

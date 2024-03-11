@@ -58,7 +58,10 @@ const Challenge = () => {
           One DAY or Day One !
         </p>
         <button className="self-end mt-2 p-2 rounded-md flex pv-1 items-center justify-center  border-solid border-1 border-[#473c89]  bg-[#473c89] focus:bg-[#584bac] font-bold font-mono hover:bg-transparent ">
-          Discord
+          <a href="https://discord.gg/gWmNstdYnj" target="_blank">
+            {" "}
+            Discord
+          </a>
         </button>
         <p></p>
       </div>
