@@ -1,4 +1,41 @@
+import { useState } from "react";
 import Rule from "../rules/Rule";
+
+function Jionchalnge() {
+  return (
+    <>
+      <p className="pt-8 ">Discord التحدي يقام في تطبيق</p>
+      <p className="pt-3 ">عليك تحميله. تجد فديو إرشادي أسفل الصفحة..</p>
+      <p className="pt-3 ">
+        JOIN-TFC تدخل إليها، ثم بعد قراءتك للوصف تضغط على إستمارة بدأ
+      </p>
+      <p className="pt-3 ">
+        التحدي حتى يتم تسجيلك في المشاركين ثم إضغط على -إبدأ التحدي- والذي يأخذك
+        إلى غرفتك الخاصة لإجراء التحدي. أي ستقوم بكتابة اسمك الكامل وعناونك
+        البريدي email
+      </p>
+      <p className="pt-3 ">
+        ويبدأ عد الأيام - يمكنك بدأ التحدي متى شئت - بتطبيقك لقواعد التحدي يترتب
+        عليك مشاركة تقدمك في إنجازها كمشاركة اليومية مع إنتهاء كل نهار. وكذا
+        إرسالك رسالة يومية قبل 5 صباحا لإثبات حضورك. بعد إنهائك التحدي تقوم بملء
+        إستمارة تجدها في غرفة join-tfc# حتى تعلم المسؤول عن إنتهائك ويتم مراجعة
+        نتائجك. طريقة تقييم النتائج تختلف من مشارك لآخر. المهم أن على كل شخص
+        تقديم كل ما لديه. وفي حالة فشلك يطلب منك إعادة التحدي إذا كنت حقا لاتزال
+        راغبا في تغيير حياتك. لا توجد أي تساهلات في تقييم التحدي وداخل المجموعة.
+        بعد أن يتم قبولك في المجموعة سيعرض عليك شرح مفصل عن المجموعة الخاصة وكذا
+        القواعد العامة لها حتى تستطيع فهم كيفية سير الأمور.
+      </p>
+      <p className="pt-8 font-bold text-xl font-sans ">One DAY or Day One !</p>
+      <button className="self-end mt-2 p-2 rounded-md flex pv-1 items-center justify-center  border-solid border-1 border-[#473c89]  bg-[#473c89] focus:bg-[#584bac] font-bold font-mono hover:bg-transparent ">
+        <a href="https://discord.gg/gWmNstdYnj" target="_blank">
+          {" "}
+          Discord
+        </a>
+      </button>
+      <p></p>
+    </>
+  );
+}
 
 const Challenge = () => {
   const rules = [
@@ -16,6 +53,11 @@ const Challenge = () => {
     "ركز: في هذا الاسبوع اختار حاجة تركز تتعلمها ساعة على الاقل كل يوم",
     "القبطان يدعم خوه: لازم تقنع واحد تعرفو يدخل التحدي",
   ];
+
+  const [Challenge, setchalenge] = useState(false);
+  function clickhandler() {
+    setchalenge(true);
+  }
   return (
     <>
       <div className="p-10 bg-black text-white flex flex-col text-end w-full h-full ">
@@ -29,41 +71,13 @@ const Challenge = () => {
         {rules.map((rule, i) => (
           <Rule key={i} numberOfRule={i + 1} rule={rule} />
         ))}
-        <button className="self-end mt-8 p-4 pv-2 rounded-md flex items-center justify-center  border-solid border-2 border-[#473c89]  hover:bg-[#473c89] focus:bg-[#584bac]">
+        <button
+          className="self-end mt-8 p-4 pv-2 rounded-md flex items-center justify-center  border-solid border-2 border-[#473c89]  hover:bg-[#473c89] focus:bg-[#584bac]"
+          onClick={clickhandler}
+        >
           <p>كيفية التسجيل هنا</p>
         </button>
-        <p className="pt-8 ">Discord التحدي يقام في تطبيق</p>
-        <p className="pt-3 ">عليك تحميله. تجد فديو إرشادي أسفل الصفحة..</p>
-        <p className="pt-3 ">
-          JOIN-TFC تدخل إليها، ثم بعد قراءتك للوصف تضغط على إستمارة بدأ
-        </p>
-        <p className="pt-3 ">
-          التحدي حتى يتم تسجيلك في المشاركين ثم إضغط على -إبدأ التحدي- والذي
-          يأخذك إلى غرفتك الخاصة لإجراء التحدي. أي ستقوم بكتابة اسمك الكامل
-          وعناونك البريدي email
-        </p>
-        <p className="pt-3 ">
-          ويبدأ عد الأيام - يمكنك بدأ التحدي متى شئت - بتطبيقك لقواعد التحدي
-          يترتب عليك مشاركة تقدمك في إنجازها كمشاركة اليومية مع إنتهاء كل نهار.
-          وكذا إرسالك رسالة يومية قبل 5 صباحا لإثبات حضورك. بعد إنهائك التحدي
-          تقوم بملء إستمارة تجدها في غرفة join-tfc# حتى تعلم المسؤول عن إنتهائك
-          ويتم مراجعة نتائجك. طريقة تقييم النتائج تختلف من مشارك لآخر. المهم أن
-          على كل شخص تقديم كل ما لديه. وفي حالة فشلك يطلب منك إعادة التحدي إذا
-          كنت حقا لاتزال راغبا في تغيير حياتك. لا توجد أي تساهلات في تقييم
-          التحدي وداخل المجموعة. بعد أن يتم قبولك في المجموعة سيعرض عليك شرح
-          مفصل عن المجموعة الخاصة وكذا القواعد العامة لها حتى تستطيع فهم كيفية
-          سير الأمور.
-        </p>
-        <p className="pt-8 font-bold text-xl font-sans ">
-          One DAY or Day One !
-        </p>
-        <button className="self-end mt-2 p-2 rounded-md flex pv-1 items-center justify-center  border-solid border-1 border-[#473c89]  bg-[#473c89] focus:bg-[#584bac] font-bold font-mono hover:bg-transparent ">
-          <a href="https://discord.gg/gWmNstdYnj" target="_blank">
-            {" "}
-            Discord
-          </a>
-        </button>
-        <p></p>
+        {Challenge && <Jionchalnge />}
       </div>
     </>
   );
