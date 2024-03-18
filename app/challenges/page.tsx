@@ -12,7 +12,7 @@ export default function Challenges() {
         {
           rules.map((e, index) => (
             <div 
-              className="mx-auto relative flex flex-col justify-center align-middle px-3 py-3 rounded-[10px] bg-[#080808] border-[2.5px] border-white"
+              className="mx-auto relative flex flex-col justify-center items-center px-3 py-3 rounded-[10px] bg-[#080808] border-[2.5px] border-white"
               key={index}
             >
               <span className="absolute top-[-18px] right-[10px] text-2xl font-bold text-center text-white bg-[#080808] px-1 py-0 rounded-lg">{ e.number }</span>
