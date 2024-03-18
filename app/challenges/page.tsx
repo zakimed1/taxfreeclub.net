@@ -3,23 +3,31 @@ export default function Challenges() {
   return (
     <>
     <div>
-      <h1>Algeria 2024</h1>
-      <p>هو تحدي لمدة أسبوع لي من خلالو تثبث لروحك ولأعضاء النادي مدى إصرارك على تطوير نفسك ونمط حياتك، وهذا ما يسمحلك تدخل المجموعة الخاصة وتكمل تحدي 5 أشهر لي منو راح تنال كل الفرص لي تستاهلها باش توصل وين راك حاب</p>
+      <h1 className="text-2xl font-bold text-center text-white">Algeria 2024</h1>
+      <p className="text-lg text-center text-white">هو تحدي لمدة أسبوع لي من خلالو تثبث لروحك ولأعضاء النادي مدى إصرارك على تطوير نفسك ونمط حياتك، وهذا ما يسمحلك تدخل المجموعة الخاصة وتكمل تحدي 5 أشهر لي منو راح تنال كل الفرص لي تستاهلها باش توصل وين راك حاب</p>
     </div>
-    <div>
-      <h5>القواعد</h5>
-      <div>
+    <div className="">
+      <h5 className="text-2xl font-bold text-right text-white">القواعد</h5>
+      <div dir="rtl" className="mt-7 grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 gap-7">
         {
           rules.map((e, index) => (
-            <div key={index}>
-              <span>{ e.number }</span>
-              <p>{ e.content }</p>
+            <div 
+              className="mx-auto relative flex flex-col justify-center align-middle px-3 py-3 rounded-[10px] bg-[#080808] border-[2.5px] border-white"
+              key={index}
+            >
+              <span className="absolute top-[-18px] right-[10px] text-2xl font-bold text-center text-white bg-[#080808] px-1 py-0 rounded-lg">{ e.number }</span>
+              <p className="text-xs text-right text-white">{ e.content }</p>
             </div>
           ))
         }
-
-        <div>
-          <a href="#"> التسجيل هنا</a>
+        <div></div>
+        <div className="h-full flex justify-center items-center"> 
+          <div className="w-full text-center py-3 rounded-[20px] border-2 border-[#fec401]">
+            <a 
+              href="#" 
+              className="text-xl font-bold text-center text-[#f2f2f2]"
+            > التسجيل هنا</a>
+          </div>
         </div>
       </div>
     </div>
