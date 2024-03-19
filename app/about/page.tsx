@@ -7,7 +7,6 @@ export default function Component() {
   return (
     // replace header with nav bar compo
     <div className="bg-black text-white w-full  h-full max-md:h-full max-sm:h-full">
-      <Header />
       <main className="w-full h-screen mt-10 max-md:h-full max-sm:h-full  px-8 max-sm:py-4 max-sm:px-2  ">
         <section className="space-y-8 flex w-11/12 text  max-sm:text-xs max-sm:flex-col">
           <div className="flex items-center justify-between">

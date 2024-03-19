@@ -3,7 +3,65 @@ import Header from "@/components/Header";
 import { Button } from "@nextui-org/button";
 import { useState } from "react";
 
-function Jionchalnge() {
+export default function Challenges() {
+  const [Challenge, setchalenge] = useState(false);
+  function clickhandler() {
+    setchalenge(true);
+  }
+  return (
+    <div className="h-full w-full max-sm:h-full">
+      <div className="flex flex-col justify-center items-center p-7">
+        <div className="">
+          <h1 className="text-3xl m-4 font-bold text-center text-white">
+            Algeria 2024
+          </h1>
+          <p className="text-lg text-center text-white">
+            هو تحدي لمدة أسبوع لي من خلالو تثبث لروحك ولأعضاء النادي مدى إصرارك
+            على تطوير نفسك ونمط حياتك، وهذا ما يسمحلك تدخل المجموعة الخاصة وتكمل
+            تحدي 5 أشهر لي منو راح تنال كل الفرص لي تستاهلها باش توصل وين راك
+            حاب
+          </p>
+        </div>
+        <div className="">
+          <h5 className="text-2xl font-bold text-right text-white mt-5">
+            القواعد
+          </h5>
+          <div
+            dir="rtl"
+            className="mt-7 grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 gap-7"
+          >
+            {rules.map((e, index) => (
+              <div
+                className="mx-auto relative flex flex-col justify-center items-center px-3 py-3 rounded-[10px] bg-[#080808] border-[2.5px] border-white w-full"
+                key={index}
+              >
+                <span className="absolute top-[-18px] right-[10px] text-2xl font-bold text-center text-white bg-[#080808] px-1 py-0 rounded-lg">
+                  {e.number}
+                </span>
+                <p className="text-xs text-right text-white">{e.content}</p>
+              </div>
+            ))}
+
+            <div className="h-full flex justify-center items-center">
+              <div onClick={clickhandler} className="w-full items-center text-center py-3 rounded-[20px] border-2 border-[#fec401]">
+                <Button
+                  className="text-xl font-bold text-center text-[#f2f2f2]"
+                >
+                  {" "}
+                  التسجيل هنا
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {Challenge && <JoinChallenge />}
+    </div>
+  );
+}
+
+
+function JoinChallenge() {
   return (
     <div className="text-right p-7">
       <p className="pt-8 ">Discord التحدي يقام في تطبيق</p>
@@ -43,65 +101,6 @@ function Jionchalnge() {
       </div>
 
       <p></p>
-    </div>
-  );
-}
-
-export default function Challenges() {
-  const [Challenge, setchalenge] = useState(false);
-  function clickhandler() {
-    setchalenge(true);
-  }
-  return (
-    <div className="h-full w-full max-sm:h-full">
-      <Header />
-      <div className="flex flex-col justify-center items-center p-7">
-        <div className=" mt-10">
-          <h1 className="text-3xl m-4 font-bold text-center text-white">
-            Algeria 2024
-          </h1>
-          <p className="text-lg text-center text-white">
-            هو تحدي لمدة أسبوع لي من خلالو تثبث لروحك ولأعضاء النادي مدى إصرارك
-            على تطوير نفسك ونمط حياتك، وهذا ما يسمحلك تدخل المجموعة الخاصة وتكمل
-            تحدي 5 أشهر لي منو راح تنال كل الفرص لي تستاهلها باش توصل وين راك
-            حاب
-          </p>
-        </div>
-        <div className="">
-          <h5 className="text-2xl font-bold text-right text-white mt-5">
-            القواعد
-          </h5>
-          <div
-            dir="rtl"
-            className="mt-7 grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 gap-7"
-          >
-            {rules.map((e, index) => (
-              <div
-                className="mx-auto relative flex flex-col justify-center items-center px-3 py-3 rounded-[10px] bg-[#080808] border-[2.5px] border-white"
-                key={index}
-              >
-                <span className="absolute top-[-18px] right-[10px] text-2xl font-bold text-center text-white bg-[#080808] px-1 py-0 rounded-lg">
-                  {e.number}
-                </span>
-                <p className="text-xs text-right text-white">{e.content}</p>
-              </div>
-            ))}
-
-            <div className="h-full flex justify-center items-center">
-              <div className="w-full text-center py-3 rounded-[20px] border-2 border-[#fec401]">
-                <Button
-                  onClick={clickhandler}
-                  className="text-xl font-bold text-center text-[#f2f2f2]"
-                >
-                  {" "}
-                  التسجيل هنا
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {Challenge && <Jionchalnge />}
     </div>
   );
 }
