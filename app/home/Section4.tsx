@@ -22,7 +22,6 @@ export const Section4 = () => {
     swiperNavigate?.slideNext;
   };
 
-
   return (
     <div className="bg-black text-white py-12">
       <div className="max-w-6xl mx-auto px-4">
@@ -33,8 +32,6 @@ export const Section4 = () => {
         <div className="">
           <Swiper
             //ref={swiperRef}
-            //className=""
-            id="blogSlider1"
             breakpoints={{
               0: { slidesPerView: 1 },
               576: { slidesPerView: 1 },
@@ -47,7 +44,7 @@ export const Section4 = () => {
               prevEl: '.slider-prev',
               nextEl: '.slider-next'
             }}
-            //autoplay={{ delay: 13500 }}
+            autoplay={{ delay: 3500 }}
             loop={true}
           >
             {
@@ -67,6 +64,10 @@ export const Section4 = () => {
               ))
             }
           </Swiper>
+          <div className="mt-5 flex justify-center gap-4">
+            <button className="slider-arrow slider-prev" onClick={handlePrev}><img src="/icons/arrow_left.png" alt="" /></button>
+            <button className="slider-arrow slider-next" onClick={handleNext}><img src="/icons/arrow_right.png" alt="" /></button>
+          </div>
         </div>
       </div>
     </div>
