@@ -5,6 +5,7 @@ import Hero from "./home/page";
 import { Section2 } from "@/app/home/Section2";
 import { Section3 } from "@/app/home/Section3";
 import { Section4 } from "./home/Section4";
+import { Fade } from 'react-awesome-reveal';
 
 export default function Home() {
   return (

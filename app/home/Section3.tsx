@@ -65,7 +65,7 @@ export const Section3 = () => {
           {renderItems()}
         </div>
 
-        <div className="bottomZ">
+        <div className="bottomZ px-8">
           <div className="buttonZ">
             <button className="prevZ" onClick={previousSlide}><img src="./icons/arrow_left.png" /></button>
             <button className="nextZ" onClick={nextSlide}><img src="./icons/arrow_right.png" /></button>

@@ -50,13 +50,13 @@ export const Section4 = () => {
             {
               testimonialData.map((e, index) => (
               <SwiperSlide key={index} className="flex flex-col">
-                <div className="border-2 mx-3 rounded-xl p-5 flex flex-col"  style={{height: '12rem'}}>
+                <div className="border-2 mx-3 rounded-xl p-5 flex flex-col h-[14rem] sm:h-[16rem]"  >
                   <p className="text-sm font-thin text-right flex-grow">{e.text}</p>
                   <div className="flex items-center mt-5">
-                    <img className="mr-2" src="/user.png" alt="" />
+                    <img className="mr-2" src={ e.avatar } alt="" />
                     <div className="">
-                      <h5 className="text-md font-mono ">Name</h5>
-                      <h6 className="text-sm font-mono font-thin text-[#FCE304] opacity-70">Position</h6>
+                      <h5 className="text-md font-mono ">{ e.name }</h5>
+                      <h6 className="text-sm font-mono font-thin text-[#FCE304] opacity-70">{ e.position }</h6>
                     </div>
                   </div>
                 </div>
@@ -79,19 +79,25 @@ const testimonialData = [
   {
     text: "طورت قدراتي والمهارات الخاصة مع TFC بشكل موجز، وأثناء بيئتي نخطط لمستقبلي.",
     name: "شخص",
-    stars: 5,
-    avatar: "/avatar1.png",
+    position: 'GRH',
+    avatar: "/user.png",
   },
   {
     text: "حققت إلى ما حققته في علم وحدي خاصة من ناحية البرمجة. قبل أن ادخل TFC كان شغفي مع HTML & CSS، الآن أرى حياتي مكانهم في سماعة رأي.",
     name: "حسان",
-    stars: 5,
-    avatar: "/avatar2.png",
+    position: 'Video editing',
+    avatar: "/user.png",
   },
   {
     text: "بدأت في عالم الويب وتعلمت الكمبيوتر بمساعدة أجونس. تعاونت مع صديقتي في مشروعها بفضل أجونس واستفدت من تجربة رواد الأعمال، مما غير منظوري تجاه العمل وبلادي.",
     name: "مروى",
-    stars: 4,
-    avatar: "/avatar3.png",
+    position: 'web dev',
+    avatar: "/user.png",
+  },
+  {
+    text: "بدأت في عالم الويب وتعلمت الكمبيوتر بمساعدة أجونس. تعاونت مع صديقتي في مشروعها بفضل أجونس واستفدت من تجربة رواد الأعمال، مما غير منظوري تجاه العمل وبلادي.",
+    name: "مروى",
+    position: 'web dev',
+    avatar: "/user.png",
   },
 ];

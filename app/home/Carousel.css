@@ -147,7 +147,7 @@
 }
 
 .bottomZ {
-  width: 50%;
+  width: 60%;
 
   text-align: center;
   position: absolute;
@@ -163,7 +163,9 @@
   display: flex;
   flex-direction: row;
 }
-
+.bottomZ .buttonZ img {
+  width: 5rem;
+}
 .bottomZ .buttonZ button {
   border-radius: 100%;
   border: none;
@@ -182,4 +184,34 @@
   width: 100%;
   height: 2px;
   background: white;
+}
+
+@media (max-width: 640px) { /* Tailwind's 'sm' breakpoint */
+  .containerZ {
+    width: 100%;
+    height: auto; /* Adjust height for mobile */
+  }
+
+  .containerZ .slideZ .itemZ:nth-child(n + 3) {
+    transform: translate(0, 0%);
+    height: 15rem;
+  }
+
+  .itemZ .contentZ {
+    top: 25%;
+    left: 10px; /* Adjust text padding for smaller screens */
+  }
+
+  .contentZ .nameZ {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+
+  .bottomZ {
+    width: 100%; /* Full width for smaller screens */
+    bottom: 10px; /* Adjust bottom positioning for visibility */
+  }
+
+  .bottomZ .buttonZ img {
+    width: 3rem; /* Adjust button size for smaller screens */
+  }
 }
