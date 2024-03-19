@@ -1,4 +1,4 @@
-import { Section3 } from "@/components/Section3";
+import { Section3 } from "@/app/home/Section3";
 
 export default function test() {
   return (

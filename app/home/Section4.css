@@ -1,0 +1,9 @@
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.swiper-slide .content {
+  flex: 1; /* Makes the content flex to fill the available space */
+}

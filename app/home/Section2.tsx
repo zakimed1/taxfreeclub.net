@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Logo24 from "./logo24.png";
 export const Section2 = () => {
   const content = [
     {
@@ -23,7 +21,7 @@ export const Section2 = () => {
       <div className="flex items-center justify-center">
         <div className="mx-auto flex   text-center items-center  max-sm:flex-col max-sm:gap-16 gap-40 ">
           <div className="w-[180px]">
-            <Image src={Logo24} alt="" />
+            <img src="./logo24.png" alt="" />
           </div>
           {content.map((e, index) => (
             <div key={index} className="w-[180px]">

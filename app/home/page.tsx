@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Image from "next/image";
-import { Section2 } from "@/components/Section2";
-import { Section3 } from "@/components/Section3";
+import { Section2 } from "@/app/home/Section2";
+import { Section3 } from "@/app/home/Section3";
 import { Footer } from "@/components/footer";
 
 export default function Hero() {
