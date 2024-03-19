@@ -1,51 +1,79 @@
+'use client'
 import Image from "next/image";
 import Play from "./play_btn.png";
+import { useState } from "react";
+import './Carousel.css'
+
 export const Section3 = () => {
-  return (
-    <div className="flex">
-      {/* Left side */}
-      <div className="w-[30%]">
-        <h5 className="text-[25px] font-medium text-left capitalize text-white">
-          Some Pictures of
-        </h5>
-        <h2 className="text-[40px] font-semibold text-left uppercase text-white">
-          MEMBERS WORK
-        </h2>
-        <p className="text-[18px] text-left capitalize text-white">
-          Variant object vector clip library. Device layout scale asset share
-          union blur duplicate editor slice.
-        </p>
-      </div>
-      {/* Right side */}
-      <div className="flex-2">
-        <div className="flex gap-4">
-          {members_work.map((e, index) => (
-            <div
-              key={index}
-              className="w-[160px] h-[200px] rounded-[15px] relative bg-slate-400"
-              style={{
-                backgroundImage: e.thumbnail,
-              }}
-            >
-              <button className="w-[40px] h-[40px] absolute top-5 right-8">
-                <Image src={Play} alt="play" />
-              </button>
-              <div className="w-[40px] h-[40px] absolute bottom-5 left-4">
-                <h6>{e.name}</h6>
-                <p>{e.position}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className="flex items-center justify-between gap-4">
-          <div className="flex gap-4">
-            <button>left</button>
-            <button>right</button>
+  const initialItems = [
+    { id: 1, number: '01', title: 'Some Pictures of', name: 'Members Work', description: 'Variant object vector clip library. Device layout scale asset share union blur duplicate editor slice.!', imageUrl: 'https://i.ibb.co/qCkd9jS/img1.jpg' },
+    { id: 2, number: '02', title: 'Web Developer', name: 'Jervi', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!', imageUrl: 'https://i.ibb.co/jrRb11q/img2.jpg' },
+    { id: 3, number: '03', title: '', name: 'Iceland', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!', imageUrl: 'https://i.ibb.co/NSwVv8D/img3.jpg' },
+    { id: 4, number: '04', title: '', name: 'Australia', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!', imageUrl: 'https://i.ibb.co/Bq4Q0M8/img4.jpg' },
+    { id: 5, number: '05', title: '', name: 'Netherland', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!', imageUrl: 'https://i.ibb.co/jTQfmTq/img5.jpg' },
+    { id: 6, number: '06', title: '', name: 'Ireland', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!', imageUrl: 'https://i.ibb.co/RNkk6L0/img6.jpg' },
+    { id: 7, number: '07', title: '', name: 'Switzerland', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!', imageUrl: 'https://i.ibb.co/RNkk6L0/img6.jpg' },
+    { id: 8, number: '08', title: '', name: 'Switzerland', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!', imageUrl: 'https://i.ibb.co/RNkk6L0/img7.jpg' }
+  ];
+
+  const [items, setItems] = useState(initialItems);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextSlide = () => {
+    setCurrentIndex(prevIndex => (prevIndex + 1) % items.length);
+  };
+
+  const previousSlide = () => {
+    setCurrentIndex(prevIndex => (prevIndex - 1 + items.length) % items.length);
+  };
+
+  const navigateTo = (index) => {
+    for (let i = 0; i < index - 1; i++) {
+      setTimeout(() => {
+        nextSlide()
+      }, i * 123);
+    }
+  }
+
+  const renderItems = () => {
+    const length = initialItems.length - 1;
+    return items
+      .slice(currentIndex, currentIndex + length)
+      .concat(items.slice(0, Math.max(0, length - (items.length - currentIndex))))
+      .map((item, index) => (
+        <div 
+          key={item.id} 
+          className={`itemZ ${index === 0 ? 'active' : ''}`} 
+          style={{ backgroundImage: `url(${item.imageUrl})` }}
+          onClick={() => navigateTo(index)}
+        >
+          <div className="contentZ">
+            <div className="nameZ font-semibold text-left uppercase text-white">{item.name}</div>
+            <div className="text-left capitalize text-white">{item.title}</div>
+            <div className="descriptionZ text-left capitalize text-white">{item.description}</div>
+            <button>See More</button>
           </div>
-          <div className="h-[2px] w-full bg-white"></div>
-          <div>
+        </div>
+      ));
+  };
+
+
+  return (
+    <div className="section3">
+      <div className="containerZ">
+        <div className="slideZ">
+          {renderItems()}
+        </div>
+
+        <div className="bottomZ">
+          <div className="buttonZ">
+            <button className="prevZ" onClick={previousSlide}><img src="./icons/arrow_left.png" /></button>
+            <button className="nextZ" onClick={nextSlide}><img src="./icons/arrow_right.png" /></button>
+          </div>
+          <div className="fake-line"></div>
+          <div className="number">
             <span className="text-[30px] font-semibold text-left uppercase text-white">
-              01
+              {initialItems[currentIndex].number}
             </span>
           </div>
         </div>
@@ -54,29 +82,3 @@ export const Section3 = () => {
   );
 };
 
-const members_work = [
-  {
-    thumbnail: "/work_sample.png",
-    name: "dev_name",
-    position: "dev_position",
-    description: "description",
-  },
-  {
-    thumbnail: "/work_sample.png",
-    name: "dev_name",
-    position: "dev_position",
-    description: "description",
-  },
-  {
-    thumbnail: "/work_sample.png",
-    name: "dev_name",
-    position: "dev_position",
-    description: "description",
-  },
-  {
-    thumbnail: "/work_sample.png",
-    name: "dev_name",
-    position: "dev_position",
-    description: "description",
-  },
-];
