@@ -1,13 +1,19 @@
 "use client";
 import Header from "@/components/Header";
 import { Button } from "@nextui-org/button";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 export default function Challenges() {
-  const [Challenge, setchalenge] = useState(false);
-  function clickhandler() {
-    setchalenge(true);
+  const [Challenge, setChallenge] = useState(false);
+  const joinChallengeRef = useRef(null);
+
+  function clickHandler() {
+    setChallenge(true);
+    if (joinChallengeRef.current) {
+      joinChallengeRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
   }
+
   return (
     <div className="h-full w-full max-sm:h-full">
       <div className="flex flex-col justify-center items-center p-7">
@@ -43,19 +49,22 @@ export default function Challenges() {
             ))}
 
             <div className="h-full flex justify-center items-center">
-              <div onClick={clickhandler} className="w-full items-center text-center py-3 rounded-[20px] border-2 border-[#fec401]">
                 <Button
-                  className="text-xl font-bold text-center text-[#f2f2f2]"
+                  onClick={clickHandler}
+                  className="text-xl font-bold text-center text-[#f2f2f2] w-full items-center text-center py-3 rounded-[20px] border-2 border-[#fec401]"
                 >
                   {" "}
                   التسجيل هنا
                 </Button>
-              </div>
             </div>
           </div>
         </div>
       </div>
-      {Challenge && <JoinChallenge />}
+      {Challenge && (
+        <div ref={joinChallengeRef}>
+          <JoinChallenge />
+        </div>
+      )}
     </div>
   );
 }

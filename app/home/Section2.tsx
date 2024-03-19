@@ -28,7 +28,7 @@ export const Section2 = () => {
               <h5 className="text-xl sm:text-lg md:text-xl font-mono text-center text-white">
                 {e.title}
               </h5>
-              <p className="text-xs sm:text-sm text-center text-white font-mono">
+              <p className="text-xs sm:text-sm text-center text-white font-serif">
                 {e.body}
               </p>
             </div>
