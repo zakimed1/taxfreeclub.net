@@ -24,6 +24,7 @@ export function Footer() {
             <p>+2136648521</p>
             <div className="flex items-center space-x-2">
               <span>🌐</span>
+              {/* to do translate function  */}
               <select className="bg-black text-white border-none capitalize">
                 <option>arabic</option>
                 <option>English</option>
