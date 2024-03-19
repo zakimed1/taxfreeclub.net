@@ -41,6 +41,7 @@ export default function Header() {
         <button className="hidden max-sm:block mt-10" onClick={Clickhandeler}>
           click
         </button>
+        {/* add the humberguer btn  */}
         {toggel ? (
           <nav className="absolute w-screen top-28 left-0 felx items-center justify-center text-[12px]">
             <Link className="m-3" href="/home">

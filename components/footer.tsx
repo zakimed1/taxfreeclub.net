@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="bg-[#080808] text-white">
       <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-        <div className="flex items-center space-x-12">
+        <div className="flex items-center justify-center align-middle space-x-12 max-sm:space-x-2 max-sm:flex-col">
           <Image
             alt="Logo"
             className="h-10 w-10"
@@ -18,8 +18,8 @@ export function Footer() {
             }}
             width="40"
           />
-          <div className="space-y-1">
-            <h2 className="text-lg font-semibold">Contact us</h2>
+          <div className="space-y-1 max-sm:text-xs felx flex-col">
+            <h2 className="text-lg font-semibold max-sm:text-xs">Contact us</h2>
             <p>tfcinfo@gmail.com</p>
             <p>+2136648521</p>
             <div className="flex items-center space-x-2">
@@ -32,8 +32,8 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-4">
-          <div className="flex items-center space-x-4">
+        <div className="flex flex-col gap-4 max-sm:ml-5">
+          <div className="flex items-center space-x-4 max-sm:text-xs  max-sm:space-x-2">
             <Link href={"/"}>
               <FacebookIcon className="h-6 w-6" />
             </Link>
@@ -48,7 +48,9 @@ export function Footer() {
               <InstagramIcon className="h-6 w-6" />
             </Link>
           </div>
-          <p className="text-sm">Copyright © 2024. TFC Team.</p>
+          <p className="text-sm max-sm:text-[12px] ">
+            Copyright © 2024. TFC Team.
+          </p>
         </div>
       </div>
     </footer>
