@@ -9,7 +9,7 @@ export default function Header() {
     settogel(!toggel);
   };
   return (
-    <header className="w-screen h-28 py-4 px-8 flex justify-between items-center border-b border-gray-800 ">
+    <header className="w-full h-28 py-4 px-8 flex justify-between items-center border-b border-gray-800 ">
       <div className="">
         <Image src={Logo} alt="logo" />
       </div>
