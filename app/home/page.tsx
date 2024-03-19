@@ -21,12 +21,12 @@ export default function Hero() {
           </p>
           <div className="flex justify-center space-x-4 max-sm:space-x-0 max-sm:flex-col max-sm:m-10 max-sm:gap-4 max-sm:items-center">
             {/* to do change btn bg color  */}
-            <Link href="">
+            <Link href="/challenges">
               <Button className="bg-gray-100 text-white hover:bg-gray-200">
                 Join Challenge Now
               </Button>
             </Link>
-            <Link href="">
+            <Link href="/about">
               <Button className="bg-white  border border-white text-black hover:bg-gray-800">
                 Discover TFC
               </Button>
