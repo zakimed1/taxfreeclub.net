@@ -16,7 +16,7 @@ export const Section2 = () => {
     },
   ];
   return (
-    <div className="mb-24  mt-10">
+    <div className="mb-24  mt-10 w-full">
       <h3 className="text-[32px] font-bold text-center text-white ">
         HELLO, WELCOME TO TFC
       </h3>

@@ -26,12 +26,7 @@ export default function Header() {
         >
           Challenge
         </Link>
-        <Link
-          className="text-2xl text-white hover:text-gray-300 max-sm:text-xs max-md:text-xs max-sm:hidden"
-          href="/Ramadan"
-        >
-          Ramadan Program
-        </Link>
+
         <Link
           className="text-2xl text-white hover:text-gray-300 max-sm:text-xs max-md:text-xs max-sm:hidden "
           href="/about"

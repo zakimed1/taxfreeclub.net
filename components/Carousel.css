@@ -1,7 +1,8 @@
 .section3 {
   position: relative;
-  width: 100vw;
+
   height: 600px;
+  overflow-x: hidden;
 }
 .containerZ {
   /*position: absolute;

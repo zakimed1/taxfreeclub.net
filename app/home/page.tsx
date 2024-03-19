@@ -10,7 +10,7 @@ import { Footer } from "@/components/footer";
 export default function Hero() {
   return (
     <>
-      <section className="bg-[#080808] text-white h-screen w-screen">
+      <section className="bg-[#080808] text-white h-screen w-full">
         <Header />
         <div className="h-screen flex justify-center items-center flex-col  container mx-auto px-6 py-20 text-center max-sm:px-2 max-sm:py-10  ">
           <h1 className="text-7xl font-bold mb-20 max-sm:text-3xl max-sm:mb-5">
