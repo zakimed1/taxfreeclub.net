@@ -10,12 +10,12 @@ export default function Challenges() {
   function clickHandler() {
     setChallenge(true);
     if (joinChallengeRef.current) {
-      joinChallengeRef.current.scrollIntoView({ behavior: 'smooth' });
+      joinChallengeRef.current.scrollIntoView({ behavior: "smooth" });
     }
   }
 
   return (
-    <div className="h-full w-full max-sm:h-full">
+    <div className="h-screen w-full max-sm:h-full">
       <div className="flex flex-col justify-center items-center p-7">
         <div className="">
           <h1 className="text-3xl m-4 font-bold text-center text-white">
@@ -49,13 +49,13 @@ export default function Challenges() {
             ))}
 
             <div className="h-full flex justify-center items-center">
-                <Button
-                  onClick={clickHandler}
-                  className="text-xl font-bold text-center text-[#f2f2f2] w-full items-center text-center py-3 rounded-[20px] border-2 border-[#fec401]"
-                >
-                  {" "}
-                  التسجيل هنا
-                </Button>
+              <Button
+                onClick={clickHandler}
+                className="text-xl font-bold text-center text-[#f2f2f2] w-full items-center text-center py-3 rounded-[20px] border-2 border-[#fec401]"
+              >
+                {" "}
+                التسجيل هنا
+              </Button>
             </div>
           </div>
         </div>
@@ -68,7 +68,6 @@ export default function Challenges() {
     </div>
   );
 }
-
 
 function JoinChallenge() {
   return (

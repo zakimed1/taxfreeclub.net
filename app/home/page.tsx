@@ -12,10 +12,10 @@ export default function Hero() {
     <>
       <section className="bg-[#080808] text-white h-screen w-full">
         <div className="h-screen flex justify-center items-center flex-col  container mx-auto px-6 py-20 text-center max-sm:px-2 max-sm:py-10  ">
-          <h1 className="text-7xl font-bold mb-20 max-sm:text-3xl max-sm:mb-5">
+          <h1 className="text-7xl font-bold mb-20 max-sm:text-5xl max-sm:mb-5">
             Make Yourself Great Again
           </h1>
-          <p className="text-xl mb-10 max-sm:text-xs max-sm:mb-5">
+          <p className="text-xl mb-10 max-sm:text-xl max-sm:mb-5">
             Development, Design Marketing-Spline Skillful Work.
           </p>
           <div className="flex justify-center space-x-4 max-sm:space-x-0 max-sm:flex-col max-sm:m-10 max-sm:gap-4 max-sm:items-center">
