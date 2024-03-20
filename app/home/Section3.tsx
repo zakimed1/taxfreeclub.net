@@ -13,8 +13,7 @@ export const Section3 = () => {
       name: "Members Work",
       description:
         "Variant object vector clip library. Device layout scale asset share union blur duplicate editor slice.!",
-      imageUrl:
-        "https://res.cloudinary.com/ds3qgqeob/image/upload/v1710898518/tfc/ox4ycbpz633dgbpj5sbp.png",
+      imageUrl: "/icons/img1.png",
     },
     {
       id: 2,
@@ -23,8 +22,7 @@ export const Section3 = () => {
       name: "Jervi",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!",
-      imageUrl:
-        "https://res.cloudinary.com/ds3qgqeob/image/upload/v1710898508/tfc/pubyfxsaccky22aor4wn.png",
+      imageUrl: "/icons/img2.png",
     },
     {
       id: 3,
@@ -33,8 +31,7 @@ export const Section3 = () => {
       name: "Iceland",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!",
-      imageUrl:
-        "https://res.cloudinary.com/ds3qgqeob/image/upload/v1710898503/tfc/ye11zlrzs3tt3jkldibk.png ",
+      imageUrl: "/icons/img3.png",
     },
     {
       id: 4,
@@ -43,8 +40,7 @@ export const Section3 = () => {
       name: "Australia",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!",
-      imageUrl:
-        "https://res.cloudinary.com/ds3qgqeob/image/upload/v1710898493/tfc/yq8hxhx8tw6kqklidpa9.png",
+      imageUrl: "/icons/img4.png",
     },
     {
       id: 5,
@@ -53,8 +49,7 @@ export const Section3 = () => {
       name: "Netherland",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!",
-      imageUrl:
-        "https://res.cloudinary.com/ds3qgqeob/image/upload/v1710898494/tfc/naxantofws2okbysm3h2.png",
+      imageUrl: "/icons/img5.png",
     },
     {
       id: 6,
@@ -63,8 +58,7 @@ export const Section3 = () => {
       name: "Ireland",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!",
-      imageUrl:
-        "https://res.cloudinary.com/ds3qgqeob/image/upload/v1710898493/tfc/yq8hxhx8tw6kqklidpa9.pngg",
+      imageUrl: "/icons/img6.png",
     },
     {
       id: 7,
@@ -73,8 +67,7 @@ export const Section3 = () => {
       name: "Switzerland",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!",
-      imageUrl:
-        "https://res.cloudinary.com/ds3qgqeob/image/upload/v1710898485/tfc/bcpyrqcutcuzzilmgcfh.png",
+      imageUrl: "/icons/img7.png",
     },
     {
       id: 8,
@@ -83,8 +76,7 @@ export const Section3 = () => {
       name: "Switzerland",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!",
-      imageUrl:
-        "https://res.cloudinary.com/ds3qgqeob/image/upload/v1710898475/tfc/fwab2y8htujyntyli8x1.png",
+      imageUrl: "/icons/img8.png",
     },
   ];
 
