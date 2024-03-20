@@ -137,10 +137,10 @@ export const Section3 = () => {
         <div className="bottomZ px-8">
           <div className="buttonZ">
             <button className="prevZ" onClick={previousSlide}>
-              <img src="./icons/arrow_left.png" />
+              <img src="./icons/arrow_left.png" alt="Previous Slide Arrow" />
             </button>
             <button className="nextZ" onClick={nextSlide}>
-              <img src="./icons/arrow_right.png" />
+              <img src="./icons/arrow_right.png" alt="Next Slide Arrow" />
             </button>
           </div>
           <div className="fake-line"></div>

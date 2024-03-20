@@ -18,7 +18,11 @@ export default function Header() {
     <nav className="bg-[#080808] border-gray-200 ">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="/logo.png" className="h-8" alt="Tax Free Club" />
+          <img
+            src="/logo.png"
+            className="h-18 max-sm:h-12"
+            alt="Tax Free Club"
+          />
         </a>
         <button
           onClick={ClickHandler}

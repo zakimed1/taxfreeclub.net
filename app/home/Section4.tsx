@@ -8,6 +8,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 import './Section4';
+import { Import } from "lucide-react";
+import { Button } from "@nextui-org/button";
+import Image from "next/image";
 
 
 export const Section4 = () => {
@@ -53,7 +56,7 @@ export const Section4 = () => {
                 <div className="border-2 mx-3 rounded-xl p-5 flex flex-col h-[14rem] sm:h-[16rem]"  >
                   <p className="text-sm font-thin text-right flex-grow">{e.text}</p>
                   <div className="flex items-center mt-5">
-                    <img className="mr-2" src={ e.avatar } alt="" />
+                    <img className="mr-2" src={ e.avatar } alt="idk" />
                     <div className="">
                       <h5 className="text-md font-mono ">{ e.name }</h5>
                       <h6 className="text-sm font-mono font-thin text-[#FCE304] opacity-70">{ e.position }</h6>
@@ -65,8 +68,8 @@ export const Section4 = () => {
             }
           </Swiper>
           <div className="mt-5 flex justify-center gap-4">
-            <button className="slider-arrow slider-prev" onClick={handlePrev}><img src="/icons/arrow_left.png" alt="" /></button>
-            <button className="slider-arrow slider-next" onClick={handleNext}><img src="/icons/arrow_right.png" alt="" /></button>
+            <Button className="slider-arrow slider-prev" onClick={handlePrev}><img src="/icons/arrow_left.png" alt="" /></Button>
+            <Button className="slider-arrow slider-next" onClick={handleNext}><img src="/icons/arrow_right.png" alt="" /></Button>
           </div>
         </div>
       </div>
