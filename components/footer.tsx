@@ -45,7 +45,7 @@ export function Footer() {
             <Link href={"/"}>
               <TwitterIcon className="h-6 w-6" />
             </Link>
-            <Link href={"/"}>
+            <Link href={"https://www.instagram.com/taxfree.club/"}>
               <InstagramIcon className="h-6 w-6" />
             </Link>
           </div>

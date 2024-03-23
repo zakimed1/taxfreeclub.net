@@ -15,9 +15,9 @@ export default function Hero() {
           <h1 className="text-7xl font-bold mb-20 max-sm:text-5xl max-sm:mb-5">
             Make Yourself Great Again
           </h1>
-          <p className="text-xl mb-10 max-sm:text-xl max-sm:mb-5">
-            Development, Design Marketing-Spline Skillful Work.
-          </p>
+          <div className="w-[400px] max-smw-[180px] max-md:w-[200px] ">
+            <Image src="/logo24.png" alt="" width={600} height={600} />
+          </div>
           <div className="flex justify-center space-x-4 max-sm:space-x-0 max-sm:flex-col max-sm:m-10 max-sm:gap-4 max-sm:items-center">
             {/* to do change btn bg color  */}
             <Link href="/challenges">
